@@ -24,6 +24,11 @@ public class SmoothlyBarShower : HealthShower
         {
             _towardsCoroutine = StartCoroutine(ChangeValueTowards());
         }
+        else
+        {
+            StopCoroutine(_towardsCoroutine);
+            _towardsCoroutine = StartCoroutine(ChangeValueTowards());
+        }
     }
 
     private IEnumerator ChangeValueTowards()

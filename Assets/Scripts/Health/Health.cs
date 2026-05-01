@@ -7,9 +7,6 @@ using UnityEngine.UI;
 public class Health : MonoBehaviour
 {
     [SerializeField] private float _maxCount;
-    [SerializeField] private TextShower _textShower;
-    [SerializeField] private BarShower _barShower;
-    [SerializeField] private SmoothlyBarShower _smoothlyShower;
 
     private float _count;
 
@@ -18,20 +15,6 @@ public class Health : MonoBehaviour
     private void Awake()
     {
         _count = 0;
-    }
-
-    private void OnEnable()
-    {
-        ValueChanged += _textShower.OnHealthChanged;
-        ValueChanged += _barShower.OnHealthChanged;
-        ValueChanged += _smoothlyShower.OnHealthChanged;
-    }
-
-    private void OnDisable()
-    {
-        ValueChanged -= _textShower.OnHealthChanged;
-        ValueChanged -= _barShower.OnHealthChanged;
-        ValueChanged -= _smoothlyShower.OnHealthChanged;
     }
 
     public void ChangeValue(float value)

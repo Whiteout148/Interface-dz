@@ -12,6 +12,6 @@ public class TextShower : HealthShower
     {
         float percentValue = (currentValue / maxValue) * MaxPercent;
 
-        _text.text = "Количество: " + currentValue + "/" + maxValue + " Проценты:" + percentValue;
+        _text.text = "Health count: " + currentValue + "/" + maxValue + " Percent:" + percentValue;
     }
 }

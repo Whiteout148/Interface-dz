@@ -1723,9 +1723,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 487946960}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1742,7 +1742,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _slider: {fileID: 1348913469}
-  _changeingSpeed: 5
+  _changeingSpeed: 50
 --- !u!1 &1361021934
 GameObject:
   m_ObjectHideFlags: 0
@@ -1879,6 +1879,9 @@ MonoBehaviour:
   _health: {fileID: 1602265752}
   _damager: {fileID: 901180567}
   _healther: {fileID: 1058983514}
+  _textShower: {fileID: 549323012}
+  _barShower: {fileID: 1214680306}
+  _smoothlyShower: {fileID: 1348913470}
 --- !u!4 &1506001104
 Transform:
   m_ObjectHideFlags: 0
@@ -1924,9 +1927,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxCount: 300
-  _textShower: {fileID: 549323012}
-  _barShower: {fileID: 1214680306}
-  _smoothlyShower: {fileID: 0}
 --- !u!4 &1602265753
 Transform:
   m_ObjectHideFlags: 0
